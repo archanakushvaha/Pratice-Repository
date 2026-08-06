@@ -128,6 +128,57 @@ h = Headmaster()
 
 h.work()
 
+# Type() function
+
+number = 100
+name = "Rajesh"
+price = 99.9
+status = True
+
+print(type(number))
+print(type(name))
+print(type(price))
+print(type(status))
+
+class Student:
+    pass
+
+s = Student()
+
+print(type(s))
+
+# dir() function
+
+print(dir(s))
+
+# isinstance() function
+
+class Student:
+    pass
+
+class Employee(Student):
+    pass
+
+s = Student()
+
+print(isinstance(s , Student))
+print(isinstance(s , Employee))
+
+# help() function
+
+class Student:
+    """
+    Student Class
+    Used to student information
+    """
+
+    def study(self):
+        """ Study Student Method"""
+        pass
+
+
+help(Student)
+
 
 
 
